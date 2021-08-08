@@ -118,7 +118,8 @@ export default class Student extends Component {
           isLoading: true,
         });
         axios
-          .post("http://localhost:8000/api/create-student", {
+          .put("http://localhost:8000/api/student/"+id, {
+           
             first_name,
             last_name,
             email,
